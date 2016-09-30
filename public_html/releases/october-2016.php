@@ -5,25 +5,31 @@
 <meta name="author" content="Marcelo M Marques">
 <meta name="description" content="Raspberry Pi SCM in a Box is the faster and easier way to set a software configuration management system up and running to learning and even to a small business environment.">
 <meta name="keywords" content="software,configuration,management,system,raspberry,raspberrypi,bugzilla,gerrit,git,linux,raspbian,postgres,postgresql,version,control">
-<link rel="stylesheet" href="mike02.css" type="text/css">
+<link rel="stylesheet" href="../mike02.css" type="text/css">
 
 <!-- Image Preloader -->
 <script type="text/javascript" src="http://ajax.googlesapi.com/ajax/libs/jquery/jquery.min.js"></script>
 
-<?php include 'db_parameters.php';?>
+</head>
+
+<?php include '../db_parameters.php';?>
 <?php
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$sql = "INSERT INTO web_site_access (ip,date,time,page) VALUES('".$_SERVER['REMOTE_ADDR']."',NOW(),NOW(),'links.php')";
+$sql = "INSERT INTO web_site_access (ip,date,time,page) VALUES('".$_SERVER['REMOTE_ADDR']."',NOW(),NOW(),'october-2016.php')";
 if ($conn->query($sql) !== TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
 ?>
 
-</head>
+<?php
+$query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
+parse_str($query);
+parse_str($query, $arr);
+?>
 
 <body>
 <div id="container">
@@ -31,33 +37,34 @@ $conn->close();
 <div id="header">
 <h1><a href="index.php">Raspberry Pi SCM in a Box</a></h1>
 <ul id="navigation">
-<li><a href="contact.php">Contact</a></li>
-<li><a href="links.php">Links</a></li>
-<li><a href="documents.php">Documents</a></li>
-<li><a href="downloads.php">Downloads</a></li>
-<li><a href="index.php">Home</a></li>
+<li><a href="../contact.php">Contact</a></li>
+<li><a href="../links.php">Links</a></li>
+<li><a href="../documents.php">Documents</a></li>
+<li><a href="../downloads.php">Downloads</a></li>
+<li><a href="../index.php">Home</a></li>
 </ul>
 </div>
 </div>
 
 <div id="content">
-<div id="contentLinksHeader">
+<div id="contentHeader">
 <div id="siteDescription">
-<p align="center">Links!</p>
+<p align="center">Software Configuration Management<br>System in a Box!</p>
 </div>
 </div>
 
 <div id="fullWidth">
 
-<h2>Useful Links</h2>
-<p>As you know, &quot;Raspberry Pi SCM in a Box&quot; run a set of tools that are available for free. So, the best way to learn how to operate eache tool is navigate through its own web site:</p>
+<h2>Welcome to Raspberry Pi SCM in a Box</h2>
+    
+<p>Se below the links to access your local services:</p>
 <p><ul>
-<li><a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi official web site</a></li>
-<li><a href="https://www.bugzilla.org/docs/" target="_blank">Bugzilla documentation</a></li>
-<li><a href="https://gerrit-documentation.storage.googleapis.com/Documentation/2.12.3/index.html" target="_blank">Gerrit code review documentation</a></li>
-<li><a href="https://gerrit.googlesource.com/plugins/its-bugzilla/+/master/src/main/resources/Documentation" target="_blank">Its-Bugzilla (gerrit to bugzilla integration plugin)</a></li>
+<li><a href="http://<?php echo $ip;?>/bugzilla/" target="_blank">Bugzilla bug tracking</a></li>
+<li><a href="http://<?php echo $ip;?>/gerrit/" target="_blank">Gerrit code review</a></li>
+<li><a href="http://<?php echo $ip;?>/phpldapadmin/" target="_blank">Ldap admin page</a></li>
 </ul></p>
-
+<p>Default administrator login and password for Bugzilla and Gerrit is: <font face="Courier New,Courier,monospace">admin / raspberry</font></p>
+<p>Default administrator login and password for Ldap is: <font face="Courier New,Courier,monospace">cn=admin,dc=ldap,dc=raspberry,dc=pi / raspberry</font></p>
 <h2>Tutorial</h2>
 <p><ul>
 <li><a href="https://try.github.io/levels/1/challenges/1" target="_blank">Learning GIT</a></li>

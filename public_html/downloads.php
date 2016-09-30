@@ -48,14 +48,14 @@ $conn->close();
 </div>
 <div id="fullWidth">
 <h2>All versions!</h2>
-<div id="highlighted"><p><b>Sep 2016 image</b> - <a href="#">Download</a></p></div>
+<div id="highlighted"><p><b>October 2016 image</b> - <a href="https://1drv.ms/u/s!AtRAjmYCNrjhmB621y68mKvQOGaQ" target="_blank">Download</a></p></div>
 <ul>
-<li><p>Raspbian Jessie Lite - Version: May 2016</p></li>
+<li><p>Raspbian - Version: 2016-09-23-raspbian-jessie-lite</p></li>
 <li><p>Gerrit Code Review - Version: 2.12.14</p></li>
 <li><p>Bugzilla - Version: 5.0.3</p></li>
 </ul>
-<p>MD5: fc340e33f3572a7f288397015e7981ae</p>
-<p>SHA1: b227e826b34585ef5c53654097c7ca49b4d88ddb</p>
+<p>MD5: <font face="Courier New,Courier,monospace">33303b5084c0319bb014702e68acaaeb</font></p>
+<p>SHA1: <font face="Courier New,Courier,monospace">d10c912ddea942819183c15fc6ca24ce86eb9609</font></p>
 <p><h2></h2></p>
 </div>
 </div>

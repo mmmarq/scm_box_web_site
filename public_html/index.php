@@ -96,12 +96,12 @@ $conn->close();
 </div>
 <div id="secondary">
 <h2>About</h2>
-<p>&quot;Raspberry Pi SCM in a Box&quot; is the faster and easier way to set a software configuration management system up and running to learning and even to a small business environment.</p>
+<p>&quot;Raspberry Pi SCM in a Box&quot; is the faster and easier way to set a software configuration management system up and running to learning and even to a small business environment. Just follow <a href="documents.php">installation procedure.</a></p>
 <h2>Latest Version</h2>
-<p>Sep 2016 image</p>
+<p>October 2016 image</p>
 <ul>
-<li><p>Raspbian Jessie Lite</p>
-<p>Version: May 2016</p></li>
+<li><p>Raspbian</p>
+<p>Version: 2016-09-23-raspbian-jessie-lite</p></li>
 <li><p>Gerrit Code Review</p>
 <p>Version: 2.12.14</p></li>
 <li><p>Bugzilla</p>
