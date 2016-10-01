@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /releases/
+Sitemap: http://raspberry.esy.es/sitemap.xml

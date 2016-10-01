@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://raspberry.esy.es/</loc>
+   </url>
+   <url>
+      <loc>http://raspberry.esy.es/documents.php</loc>
+   </url>
+   <url>
+      <loc>http://raspberry.esy.es/index.php</loc>
+   </url>
+   <url>
+      <loc>http://raspberry.esy.es/downloads.php</loc>
+   </url>
+   <url>
+      <loc>http://raspberry.esy.es/links.php</loc>
+   </url>
+   <url>
+      <loc>http://raspberry.esy.es/contact.php</loc>
+   </url>
+</urlset>
