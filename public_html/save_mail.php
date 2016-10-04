@@ -11,18 +11,6 @@
 <script type="text/javascript" src="http://ajax.googlesapi.com/ajax/libs/jquery/jquery.min.js"></script>
 
 <?php include 'db_parameters.php';?>
-<?php
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-$sql = "INSERT INTO web_site_access (ip,date,time,page) VALUES('".$_SERVER['REMOTE_ADDR']."',NOW(),NOW(),'contact.php')";
-if ($conn->query($sql) !== TRUE) {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-$conn->close();
-?>
-
 </head>
 
 <body>
@@ -43,27 +31,31 @@ $conn->close();
 <div id="content">
 <div id="contentContactHeader">
 <div id="siteDescription">
-<p align="center">Contact!</p>
+<p align="center">Registration completed!</p>
 </div>
 </div>
 
 <div id="fullWidth">
 
-<h2>Contact Information</h2>
-<p>If you need some additional information about this project, please send an e-mail to the address below:</p>
-<p><ul>
-<li><a href="mailto:marcelo.martim@gmail.com?subject=Raspberry%20Pi%20SCM%20in%20a%20Box%20Support" target="_blank">marcelo.martim@gmail.com</a></li>
-</ul></p>
-
-<h2>Stay aware about our project news!</h2>
-<p>Let us know your e-mail address to receive our latest news!</p>
-<p><br>
-<form action="save_mail.php" method="post">
-  E-mail: 
-  <input type="email" name="email" required>&nbsp;<input type="submit" value="Submit">
-</form>
-</p>
-
+<h2>Registration result:</h2>
+<?php
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT email FROM news WHERE email='".$_POST["email"]."'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    echo "<p>We already have your e-mail address in our database!</p>";
+} else {
+    $sql = "INSERT INTO news (email,date,time) VALUES('".$_POST["email"]."',NOW(),NOW())";
+    if ($conn->query($sql) !== TRUE) {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    echo "<p>Your e-mail address is now in our database. Thanks for your registration!</p>";
+}
+$conn->close();
+?>
 </div>
 </div>
 
