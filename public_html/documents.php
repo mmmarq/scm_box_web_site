@@ -99,6 +99,7 @@ $conn->close();
 <p><b>Configuration files update</b>:</p>
 <p>&nbsp;</p>
 <p>This next step will request from you some important setup information. If you want to make your system able to send notification mails, please make sure you have the SMTP server name, port number, username and password available.</p>
+<p>If you dont have a SMTP server, you can setup an account at a free SMTP server (E.g:<a href="https://www.sendgrid.com/" target="_blank">SendGrid cloud-based email service</a>).</p>
 <p><ul>
 <li>Run: <font face="Courier New,Courier,monospace">cd /home/pi/scm_box_setup</font></li>
 <li>Run: <font face="Courier New,Courier,monospace">git pull</font></li>
