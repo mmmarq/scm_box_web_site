@@ -1,5 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><title>Raspberry Pi SCM in a Box</title>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="icon" type="image/png" href="images/tool_box_ico.png">
+<title>Raspberry Pi SCM in a Box</title>
 
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1">
 <meta name="author" content="Marcelo M Marques">

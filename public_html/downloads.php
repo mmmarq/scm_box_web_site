@@ -1,5 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><title>Raspberry Pi SCM in a Box</title>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="icon" type="image/png" href="images/tool_box_ico.png">
+<title>Raspberry Pi SCM in a Box</title>
 
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1">
 <meta name="author" content="Marcelo M Marques">
@@ -48,14 +51,14 @@ $conn->close();
 </div>
 <div id="fullWidth">
 <h2>All versions!</h2>
-<div id="highlighted"><p><b>October 2016 image</b> - <a href="https://1drv.ms/u/s!AtRAjmYCNrjhmB621y68mKvQOGaQ" target="_blank">Download</a></p></div>
+<div id="highlighted"><p><b>October 2016 image</b> - <a href="https://www.amazon.com/clouddrive/share/Otbb5ZHkr2JZ1clTRle1fXG74WcR97vys03YWOQT6Kz" target="_blank">Download</a></p></div>
 <ul>
 <li><p>Raspbian - Version: 2016-09-23-raspbian-jessie-lite</p></li>
 <li><p>Gerrit Code Review - Version: 2.12.14</p></li>
 <li><p>Bugzilla - Version: 5.0.3</p></li>
 </ul>
-<p>MD5: <font face="Courier New,Courier,monospace">33303b5084c0319bb014702e68acaaeb</font></p>
-<p>SHA1: <font face="Courier New,Courier,monospace">d10c912ddea942819183c15fc6ca24ce86eb9609</font></p>
+<p>MD5: <font face="Courier New,Courier,monospace">d20d467dbd894e72ef2c78ed7499b9df</font></p>
+<p>SHA1: <font face="Courier New,Courier,monospace">4a188e247c8c218e459982b3918507185cb0a50d</font></p>
 <p><h2></h2></p>
 </div>
 </div>
