@@ -6,8 +6,8 @@
 
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1">
 <meta name="author" content="Marcelo M Marques">
-<meta name="description" content="Raspberry Pi SCM in a Box is the faster and easier way to set a software configuration management system up and running to learning and even to a small business environment.">
-<meta name="keywords" content="software,configuration,management,system,raspberry,raspberrypi,bugzilla,gerrit,git,linux,raspbian,postgres,postgresql,version,control">
+<meta name="description" content="Raspberry Pi SCM in a Box is the faster and easier way to set a software configuration management system up and running to a learning and even to a small business environment.">
+<meta name="keywords" content="software,configuration,management,system,raspberry,raspberrypi,bugzilla,mantis,mantisbt,gerrit,git,jenkins,jenkins-ci,linux,raspbian,postgres,postgresql,mysql,version,control">
 <link rel="stylesheet" href="mike02.css" type="text/css">
 
 <!-- Image Preloader -->
@@ -56,16 +56,18 @@ $conn->close();
 <p><ul>
 <li><a>Raspbian Linux</a>: Raspberry Pi operational system</li>
 <li><a>Git</a>: version control system tool</li>
-<li><a>Bugzilla</a>: bug-tracking web tool</li>
+<li><a>MantisBT</a>: bug-tracking web tool</li>
 <li><a>Gerrit</a>: code review tool</li>
+<li><a>Jenkins</a>: Continuous build tool</li>
 <li><a>OpenLDAP</a>: user access control system</li>
-<li><a>PostgreSQL</a>: bug-tracking and code review data storage</li>
+<li><a>mySQL</a>: bug-tracking and code review data storage</li>
 </ul></p>
 <p>With this tool box you can exercise the most important activities of a software developemnt life cycle:
 <ul>
 <li>Source code version control using <b>GIT</b></li>
 <li>Source code revision using <b>Gerrit</b></li>
-<li>Bug tracking using <b>Bugzilla</b></li>
+<li>Bug tracking using <b>MantisBT</b></li>
+<li>Continuous software build using <b>Jenkins</b></li>
 <li>Access control using <b>Ldap</b></li>
 </ul></p>
 <p>Please access <a href="documents.php">Documents</a> page for more information about how-to setup your box.</p>
@@ -101,14 +103,16 @@ $conn->close();
 <h2>About</h2>
 <p>&quot;Raspberry Pi SCM in a Box&quot; is the faster and easier way to set a software configuration management system up and running to learning and even to a small business environment. Just follow <a href="documents.php">installation procedure.</a></p>
 <h2>Latest Version</h2>
-<p>October 2016 image</p>
+<p>December 2016 image</p>
 <ul>
 <li><p>Raspbian</p>
-<p>Version: 2016-09-23-raspbian-jessie-lite</p></li>
+<p>Version: 2016-11-25-raspbian-jessie-lite</p></li>
 <li><p>Gerrit Code Review</p>
-<p>Version: 2.12.14</p></li>
-<li><p>Bugzilla</p>
-<p>Version: 5.0.3</p></li>
+<p>Version: 2.13.3</p></li>
+<li><p>MantisBT</p>
+<p>Version: 1.3.3</p></li>
+<li><p>Jenkins </p>
+<p>Version: 2.19.4</p></li>
 </ul></p>
 <p><a href="downloads.php">All versions download</a></p>
 </div>

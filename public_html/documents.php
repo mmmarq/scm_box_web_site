@@ -6,8 +6,8 @@
 
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1">
 <meta name="author" content="Marcelo M Marques">
-<meta name="description" content="Raspberry Pi SCM in a Box is the faster and easier way to set a software configuration management system up and running to learning and even to a small business environment.">
-<meta name="keywords" content="software,configuration,management,system,raspberry,raspberrypi,bugzilla,gerrit,git,linux,raspbian,postgres,postgresql,version,control">
+<meta name="description" content="Raspberry Pi SCM in a Box is the faster and easier way to set a software configuration management system up and running to a learning and even to a small business environment.">
+<meta name="keywords" content="software,configuration,management,system,raspberry,raspberrypi,bugzilla,mantis,mantisbt,gerrit,git,jenkins,jenkins-ci,linux,raspbian,postgres,postgresql,mysql,version,control">
 <link rel="stylesheet" href="mike02.css" type="text/css">
 
 <!-- Image Preloader -->
@@ -56,21 +56,23 @@ $conn->close();
 <h1>&#9762;Attention&#9762;</h1>
 <p>&quot;Raspberry Pi SCM in a Box&quot; project was not designed to run into a opened network. It was designed to run under a protected LAN. All usernames and passwords created for initial setup are listed below and you can change them, but keep in mind to change all needed configuration files in case you change some password.</p>
 <p>&nbsp;</p>
-<p>Raspberry Pi usernames/passwords:
+<p>Raspberry Pi default username/password:
 <ul>
 <li>pi / raspberry</li>
-<li>gerrit2 / raspberry</li>
+<li>dev1 / developer1</li>
+<li>dev2 / developer2</li>
 </ul></p>
-<p>Postgresql usernames/passwords:
+<p>mySQL usernames/passwords:
 <ul>
-<li>gerrit2 / bugless (gerrit database)</li>
-<li>bugs / bugless (bugzilla database)</li>
+<li>root / raspberry (mySQL admin user)</li>
+<li>gerrit / bugless (gerrit database)</li>
+<li>bugs / bugless (mantis database)</li>
 </ul></p>
 <p>Ldap admin username/password:
 <ul>
 <li>cn=admin,dc=ldap,dc=raspberry,dc=pi / raspberry</li>
 </ul></p>
-<p>Initial username/password to login into gerrit and bugzilla:
+<p>Initial username/password to login into gerrit, mantisbt and jenkins:
 <ul>
 <li>admin / raspberry</li>
 </ul></p>
@@ -102,7 +104,7 @@ $conn->close();
 <p><b>Configuration files update</b>:</p>
 <p>&nbsp;</p>
 <p>This next step will request from you some important setup information. If you want to make your system able to send notification mails, please make sure you have the SMTP server name, port number, username and password available.</p>
-<p>If you dont have a SMTP server, you can setup an account at a free SMTP server (E.g:<a href="https://www.sendgrid.com/" target="_blank">SendGrid cloud-based email service</a>).</p>
+<p>If you dont have a SMTP server, you can setup an account at a free SMTP server (E.g: <a href="https://www.sendgrid.com/" target="_blank">SendGrid cloud-based email service</a>).</p>
 <p><ul>
 <li>Run: <font face="Courier New,Courier,monospace">cd /home/pi/scm_box_setup</font></li>
 <li>Run: <font face="Courier New,Courier,monospace">git pull</font></li>
@@ -112,33 +114,22 @@ $conn->close();
 <p>&nbsp;</p>
 <h2>Services URL</h2>
 <ul>
-<li><font face="Courier New,Courier,monospace">http://&lt;RASPI_IP_ADDRESS&gt;</font> default home page</li>
+<li><font face="Courier New,Courier,monospace">http://&lt;RASPI_IP_ADDRESS&gt;</font> default home page (visit this page for some important info)</li>
 <li><font face="Courier New,Courier,monospace">http://&lt;RASPI_IP_ADDRESS&gt;/phpldapadmin</font> for user access control</li>
-<li><font face="Courier New,Courier,monospace">http://&lt;RASPI_IP_ADDRESS&gt;/bugzilla</font> for bug tracking</li>
+<li><font face="Courier New,Courier,monospace">http://&lt;RASPI_IP_ADDRESS&gt;/mantisbt</font> for bug tracking</li>
 <li><font face="Courier New,Courier,monospace">http://&lt;RASPI_IP_ADDRESS&gt;/gerrit</font> for source code access and review</li>
+<li><font face="Courier New,Courier,monospace">http://&lt;RASPI_IP_ADDRESS&gt;/jenkins</font> for continuous code build</li>
 </ul>
 <p>&nbsp;</p>
-<h2>Initial tools setup</h2>
-<p><b>Create new users</b>:</p>
-<p>&nbsp;</p>
-<p>There is only one user able to login into bugzilla and gerrit after first boot, its username is <font face="Courier New,Courier,monospace">admin</font>. This user is the administrator for both tools, so you need to create new Ldap user account for regular users. Follow the instructions bellow to create a new ldap user</p>
-<p><ul>
-<li>In your browser access Raspberry Pi Ldap admin page: <font face="Courier New,Courier,monospace">http://&lt;RASPI_IP_ADDRESS&gt;/phpldapadmin</font></li>
-<li>Login using admin credentials: <font face="Courier New,Courier,monospace">cn=admin,dc=ldap,dc=raspberry,dc=pi</font> and password: <font face="Courier New,Courier,monospace">raspberry</font></li>
-<li>Click on <font face="Courier New,Courier,monospace">&#9734; Create new entry here</font> under <font face="Courier New,Courier,monospace">development</font> Organization Unit (ou).</li>
-<li>Select <font face="Courier New,Courier,monospace">Generic: User Account</font></li>
-<li>Fill all new user information (User ID will be login information for new user) and click on <font face="Courier New,Courier,monospace">Create Object</font> button and then click on <font face="Courier New,Courier,monospace">Commit</font> button</li>
-<li>Click on <font face="Courier New,Courier,monospace">Add new attribute</font> and select <font face="Courier New,Courier,monospace">Email</font> on pick list, add new user e-mail address and click on <font face="Courier New,Courier,monospace">Update Object</font> button and then click on <font face="Courier New,Courier,monospace">Update Object</font> button again</li>
-<li>Now the new user is able to login into Bugzilla and Gerrit.
-<li>Repeat the steps above for all new users</li>
-</ul></p>
+
 <h2 id="installLocation">Tools and database install location</h2>
 <p>&nbsp;</p>
 <p>The most important piece of "Raspberry Pi SCM in a Box" data is available under the folder named: <font face="Courier New,Courier,monospace">/my_services/</font>. There you can see the following subfolders:
 <ul>
-<li><font face="Courier New,Courier,monospace">bugzilla/</font></li>
+<li><font face="Courier New,Courier,monospace">mantisbt/</font></li>
 <li><font face="Courier New,Courier,monospace">gerrit/</font></li>
-<li><font face="Courier New,Courier,monospace">postgresql/</font></li>
+<li><font face="Courier New,Courier,monospace">jenkins/</font></li>
+<li><font face="Courier New,Courier,monospace">mysql/</font></li>
 </ul></p>
 <p>Unfortunately we know that an SD card is not the faster and more reliable storage device to place your data. An SSD drive plugged on USB port can be more than <b>50%</b> faster then a SD card. So, if you are planning to make your little SCM tools server support a small team connected to it, I strongly recommend you to move <font face="Courier New,Courier,monospace">/my_services</font> folder content to a different storage device (external HD per example).</p>
 <p>Please, follow basic steps below to make your tools available on a external storage device:</p>
@@ -148,7 +139,8 @@ $conn->close();
 <li>Stop all services that access <font face="Courier New,Courier,monospace">/my_services</font>
 <ul><li><font face="Courier New,Courier,monospace"># sudo service gerrit stop</font></li>
 <li><font face="Courier New,Courier,monospace"># sudo service apache2 stop</font></li>
-<li><font face="Courier New,Courier,monospace"># sudo service postgresql stop</font></li>
+<li><font face="Courier New,Courier,monospace"># sudo service jenkins stop</font></li>
+<li><font face="Courier New,Courier,monospace"># sudo service mysql stop</font></li>
 </ul></li>
 <li>Rename <font face="Courier New,Courier,monospace">/my_services</font> to <font face="Courier New,Courier,monospace">/my_services-bkp</font>
 <ul><li><font face="Courier New,Courier,monospace"># sudo mv /my_services /my_services-bkp</font></li>
@@ -171,9 +163,10 @@ $conn->close();
 </ul></li>
 <li>Restart services
 <ul>
-<li><font face="Courier New,Courier,monospace"># sudo service postgresql start</font></li>
+<li><font face="Courier New,Courier,monospace"># sudo service mysql start</font></li>
 <li><font face="Courier New,Courier,monospace"># sudo service apache2 start</font></li>
-<li><font face="Courier New,Courier,monospace"># sudo service gerrit start</font></li></ul></li>
+<li><font face="Courier New,Courier,monospace"># sudo service gerrit start</font></li>
+<li><font face="Courier New,Courier,monospace"># sudo service jenkins start</font></li></ul></li>
 </ul></p>
 </div>
 </div>

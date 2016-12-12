@@ -6,8 +6,8 @@
 
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1">
 <meta name="author" content="Marcelo M Marques">
-<meta name="description" content="Raspberry Pi SCM in a Box is the faster and easier way to set a software configuration management system up and running to learning and even to a small business environment.">
-<meta name="keywords" content="software,configuration,management,system,raspberry,raspberrypi,bugzilla,gerrit,git,linux,raspbian,postgres,postgresql,version,control">
+<meta name="description" content="Raspberry Pi SCM in a Box is the faster and easier way to set a software configuration management system up and running to a learning and even to a small business environment.">
+<meta name="keywords" content="software,configuration,management,system,raspberry,raspberrypi,bugzilla,mantis,mantisbt,gerrit,git,jenkins,jenkins-ci,linux,raspbian,postgres,postgresql,mysql,version,control">
 <link rel="stylesheet" href="mike02.css" type="text/css">
 
 <!-- Image Preloader -->
@@ -56,15 +56,14 @@ $conn->close();
 <p>As you know, &quot;Raspberry Pi SCM in a Box&quot; run a set of tools that are available for free. So, the best way to learn how to operate eache tool is navigate through its own web site:</p>
 <p><ul>
 <li><a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi official web site</a></li>
-<li><a href="https://www.bugzilla.org/docs/" target="_blank">Bugzilla documentation</a></li>
-<li><a href="https://gerrit-documentation.storage.googleapis.com/Documentation/2.12.3/index.html" target="_blank">Gerrit code review documentation</a></li>
-<li><a href="https://gerrit.googlesource.com/plugins/its-bugzilla/+/master/src/main/resources/Documentation" target="_blank">Its-Bugzilla (gerrit to bugzilla integration plugin)</a></li>
+<li><a href="https://www.mantisbt.org/" target="_blank">MantisBT official web site</a></li>
+<li><a href="https://gerrit-documentation.storage.googleapis.com/Documentation/2.13.3/index.html" target="_blank">Gerrit code review documentation</a></li>
+<li><a href="https://jenkins.io/doc/book/" target="_blank">Jenkins documentation</a></li>
 </ul></p>
 
 <h2>Tutorial</h2>
 <p><ul>
 <li><a href="https://try.github.io/levels/1/challenges/1" target="_blank">Learning GIT</a></li>
-<li><a href="http://www.guru99.com/bugzilla-tutorial-for-beginners.html" target="_blank">Bugzilla for beginners</a></li>
 <li><a href="https://www.mediawiki.org/wiki/Gerrit/Tutorial" target="_blank">Gerrit tutorial</a></li>
 </ul></p>
 
