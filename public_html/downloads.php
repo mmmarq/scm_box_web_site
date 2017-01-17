@@ -52,7 +52,21 @@ $conn->close();
 <div id="fullWidth">
 <h2>All versions!</h2>
 
+<div id="highlighted"><p><b>January 2017 image</b> - <a href="https://www.amazon.com/clouddrive/share/Q8QhMoqPUliu5uaq3vvrk5ri4GjlfKukti5XX4iIKWG" target="_blank">Download</a></p></div>
+<div>
+<ul>
+<li><p>Raspbian - Version: 2017-01-11-raspbian-jessie-lite</p></li>
+<li><p>Gerrit Code Review - Version: 2.13.5</p></li>
+<li><p>MantisBT - Version: 2.0.0</p></li>
+<li><p>Jenkins - Version: 2.32.1</p></li>
+</ul>
+<p>MD5: <font face="Courier New,Courier,monospace">8b0d92548284d4f07fdc0c78f6f4feef</font></p>
+<p>SHA1: <font face="Courier New,Courier,monospace">41847c4b5f36f86c3c55681caceb543d0b155b01</font></p>
+<p><h2></h2></p>
+</div>
+   
 <div id="highlighted"><p><b>December 2016 image</b> - <a href="https://www.amazon.com/clouddrive/share/2NN7xwOwK5dXGVenOuhG4PAsAXilRZBoJoo7Njk17A" target="_blank">Download</a></p></div>
+<div>
 <ul>
 <li><p>Raspbian - Version: 2016-11-25-raspbian-jessie-lite</p></li>
 <li><p>Gerrit Code Review - Version: 2.13.3</p></li>
@@ -65,6 +79,7 @@ $conn->close();
 </div>
 
 <div id="highlighted"><p><b>October 2016 image</b> - <a href="https://www.amazon.com/clouddrive/share/Otbb5ZHkr2JZ1clTRle1fXG74WcR97vys03YWOQT6Kz" target="_blank">Download</a></p></div>
+<div>
 <ul>
 <li><p>Raspbian - Version: 2016-09-23-raspbian-jessie-lite</p></li>
 <li><p>Gerrit Code Review - Version: 2.12.14</p></li>
@@ -76,7 +91,7 @@ $conn->close();
 </div>
 </div>
 <div id="footer">
-<p>Raspberry Pi SCM in a Box - &copy; 2016 Marcelo Martim Marques</p>
+<p>Raspberry Pi SCM in a Box - &copy; 2017 Marcelo Martim Marques</p>
 </div>
 </div>
 </body></html>

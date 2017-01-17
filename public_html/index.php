@@ -103,22 +103,22 @@ $conn->close();
 <h2>About</h2>
 <p>&quot;Raspberry Pi SCM in a Box&quot; is the faster and easier way to set a software configuration management system up and running to learning and even to a small business environment. Just follow <a href="documents.php">installation procedure.</a></p>
 <h2>Latest Version</h2>
-<p>December 2016 image</p>
+<p>January 2017 image</p>
 <ul>
 <li><p>Raspbian</p>
-<p>Version: 2016-11-25-raspbian-jessie-lite</p></li>
+<p>Version: 2017-01-11-raspbian-jessie-lite</p></li>
 <li><p>Gerrit Code Review</p>
-<p>Version: 2.13.3</p></li>
+<p>Version: 2.13.5</p></li>
 <li><p>MantisBT</p>
-<p>Version: 1.3.3</p></li>
+<p>Version: 2.0.0</p></li>
 <li><p>Jenkins </p>
-<p>Version: 2.19.4</p></li>
+<p>Version: 2.32.1</p></li>
 </ul></p>
 <p><a href="downloads.php">All versions download</a></p>
 </div>
 </div>
 <div id="footer">
-<p>Raspberry Pi SCM in a Box - &copy; 2016 Marcelo Martim Marques</p>
+<p>Raspberry Pi SCM in a Box - &copy; 2017 Marcelo Martim Marques</p>
 </div>
 </div>
 </body></html>

@@ -57,7 +57,7 @@ $conn->close();
 <p><ul>
 <li><a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi official web site</a></li>
 <li><a href="https://www.mantisbt.org/" target="_blank">MantisBT official web site</a></li>
-<li><a href="https://gerrit-documentation.storage.googleapis.com/Documentation/2.13.3/index.html" target="_blank">Gerrit code review documentation</a></li>
+<li><a href="https://gerrit-documentation.storage.googleapis.com/Documentation/2.13.5/index.html" target="_blank">Gerrit code review documentation</a></li>
 <li><a href="https://jenkins.io/doc/book/" target="_blank">Jenkins documentation</a></li>
 </ul></p>
 
@@ -71,7 +71,7 @@ $conn->close();
 </div>
 
 <div id="footer">
-<p>Raspberry Pi SCM in a Box - &copy; 2016 Marcelo Martim Marques</p>
+<p>Raspberry Pi SCM in a Box - &copy; 2017 Marcelo Martim Marques</p>
 </div>
 </div>
 </body></html>

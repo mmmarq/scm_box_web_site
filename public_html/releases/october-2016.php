@@ -76,7 +76,7 @@ parse_str($query, $arr);
 </div>
 
 <div id="footer">
-<p>Raspberry Pi SCM in a Box - &copy; 2016 Marcelo Martim Marques</p>
+<p>Raspberry Pi SCM in a Box - &copy; 2017 Marcelo Martim Marques</p>
 </div>
 </div>
 </body></html>
